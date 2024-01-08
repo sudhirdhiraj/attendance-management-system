@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	version="5.0">
+	<servlet>
+		<description></description>
+		<display-name>FacultyLogin</display-name>
+		<servlet-name>FacultyLogin</servlet-name>
+		<servlet-class>com.project.registration.FacultyLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacultyLogin</servlet-name>
+		<url-pattern>/FacultyLogin</url-pattern>
+	</servlet-mapping>
+	<description></description>
+
+	<servlet>
+		<description></description>
+		<display-name>Adminlogin</display-name>
+		<servlet-name>Adminlogin</servlet-name>
+		<servlet-class>com.project.registration.Adminlogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Adminlogin</servlet-name>
+		<url-pattern>/Adminlogin</url-pattern>
+	</servlet-mapping>
+
+	<display-name>Attendance management system</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>AddFaculty</display-name>
+		<servlet-name>AddFaculty</servlet-name>
+		<servlet-class>com.project.registration.AddFaculty</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFaculty</servlet-name>
+		<url-pattern>/AddFaculty</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>DeleteFaculty</display-name>
+		<servlet-name>DeleteFaculty</servlet-name>
+		<servlet-class>com.project.registration.DeleteFaculty</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteFaculty</servlet-name>
+		<url-pattern>/DeleteFaculty</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>AddStudent</display-name>
+		<servlet-name>AddStudent</servlet-name>
+		<servlet-class>com.project.registration.AddStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddStudent</servlet-name>
+		<url-pattern>/AddStudent</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>AddStudentAttendance</display-name>
+		<servlet-name>AddStudentAttendance</servlet-name>
+		<servlet-class>com.project.registration.AddStudentAttendance</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddStudentAttendance</servlet-name>
+		<url-pattern>/AddStudentAttendance</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateAttendance</servlet-name>
+		<url-pattern>/UpdateAttendance</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UpdateAttendance</display-name>
+		<servlet-name>UpdateAttendance</servlet-name>
+		<servlet-class>com.project.data.UpdateAttendance</servlet-class>
+	</servlet>
+	
+	
+	
+	<!-- <servlet>
+		<description></description>
+		<display-name>FetchStudent</display-name>
+		<servlet-name>FetchStudent</servlet-name>
+		<servlet-class>com.project.registration.FetchStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FetchStudent</servlet-name>
+		<url-pattern>/FetchStudent</url-pattern>
+	</servlet-mapping> -->
+	<servlet>
+		<description></description>
+		<display-name>Logout</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.project.registration.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+</web-app>
